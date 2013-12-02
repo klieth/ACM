@@ -1,0 +1,23 @@
+4 1
+Gore
+4 5
+Buchanan Bush Gore
+Buchanan Bush Gore
+Kerry Bush Gore
+Kerry Bush Gore
+Bush Gore
+4 8
+Buchanan Bush Gore
+Buchanan Bush Gore
+Kerry Bush Gore
+Kerry Bush Gore
+Bush Gore
+Gore
+Gore
+Gore
+4 4
+Buchanan
+Bush
+Kerry
+Gore
+0 0

@@ -6,9 +6,9 @@ public class Program {
 		Map<String, Integer> map = new HashMap<String,Integer>();
 		Scanner stdin = new Scanner(System.in);
 		while (stdin.hasNext()) {
-			Scanner line = new Scanner(stdin.nextLine());
+			Scanner line = new Scanner(stdin.nextLine().replaceAll("[,.;\'`\"()/:-]+"," "));
 			while (line.hasNext()) {
-				String word = line.next().replaceAll("[,.;\'`\"()/:-]*","").toLowerCase();
+				String word = line.next().toLowerCase();
 				if (map.containsKey(word)) {
 					map.put(word, map.get(word) + 1);
 				} else {
@@ -29,6 +29,11 @@ public class Program {
 			}
 		}
 
+		/*
+		for (String s : map.keySet()) {
+			System.out.println(s + ": " + map.get(s));
+		}
+		*/
 		System.out.println(max + " occurrences");
 		for (String s : words) {
 			System.out.println(s);
